@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Belson on Eduardo Gomez</title>
+    <link>/tags/belson/</link>
+    <description>Recent content in Belson on Eduardo Gomez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 03 Oct 2018 16:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/belson/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Analytics Lifecycle</title>
+      <link>/blog/data-analytics-lifecyle/</link>
+      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/data-analytics-lifecyle/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

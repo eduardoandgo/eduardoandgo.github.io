@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Society on Eduardo Gomez</title>
+    <link>/tags/society/</link>
+    <description>Recent content in Society on Eduardo Gomez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 14 Feb 2018 16:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/society/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ethics and Data Science in Society</title>
+      <link>/blog/ethics/</link>
+      <pubDate>Wed, 14 Feb 2018 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/ethics/</guid>
+      <description>Cathy O’Neil discusses the problems and ethics with using data science in her book Weapons of Math Destruction. In one chapter she discusses the U.S. News college ranking, it’s development, and it’s consequences. It was the choice of what was deemed important for a college to have in order for the student to succeed that I see as the problem. A problem with this is that people were trying to cheat the system and raise their score without really deserving it.</description>
+    </item>
+    
+  </channel>
+</rss>

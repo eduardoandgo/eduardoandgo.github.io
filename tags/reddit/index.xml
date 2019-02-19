@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reddit on Eduardo Gomez</title>
+    <link>/tags/reddit/</link>
+    <description>Recent content in Reddit on Eduardo Gomez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 31 Jan 2018 15:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/reddit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Critique of an /r/dataisbeautiful Post</title>
+      <link>/blog/critique/</link>
+      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      
+      <guid>/blog/critique/</guid>
+      <description>I was looking through the /r/dataisbeautiful thread and the one that stood out the most was one where they posted a link to their website, Flickmatrix where combine Rotten Tomato, IDMb, Letterboxd, and Metacritic scores with what’s available on Netflix and Amazon Video.
+I looked throughout the site to find a blurb about where the data was being collected from but I could not find anything. So, I went back to the thread and looked for a comment or such, and all that was explained was that they got the information from their respective website, but was not responding to the comments that were asking about how they were getting information from Netflix, which makes me think they might have been sneaking around.</description>
+    </item>
+    
+  </channel>
+</rss>
