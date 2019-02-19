@@ -61,16 +61,7 @@ I looked throughout the site to find a blurb about where the data was being coll
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Sun, 20 Jan 2019 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      <pubDate>Sun, 20 Jan 2019 22:55:05 -0400</pubDate>
       
       <guid>/about/</guid>
       <description>My name is Eduardo Gomez and I am in my final semester at CSU, Chico. I am studying Statistics, Applied Mathematics, and am working towards a Data Science certificate.</description>
