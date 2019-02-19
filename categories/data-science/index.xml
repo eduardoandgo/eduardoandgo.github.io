@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on Eduardo Gomez</title>
+    <title>Data Science on data science</title>
     <link>/categories/data-science/</link>
-    <description>Recent content in Data Science on Eduardo Gomez</description>
+    <description>Recent content in Data Science on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 03 Oct 2018 16:59:13 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 16:59:13 -0400</lastBuildDate>
     
 	<atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,35 @@
     <item>
       <title>Data Analytics Lifecycle</title>
       <link>/blog/data-analytics-lifecyle/</link>
-      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
+      <pubDate>Wed, 20 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/blog/data-analytics-lifecyle/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Crime in the United States</title>
+      <link>/projects/crime/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/projects/crime/</guid>
+      <description>For my project, I will be looking at the police data from each state in order to create an interactive web app. I have checked a couple of state websites and I have checked that I can get information from them by webscraping. As for the interface, I plan on having a a section where the user can choose which crimes care about less when looking for new places to live and the map will brighten up or change the shade of the color to show them which states would be the best fit.</description>
+    </item>
+    
+    <item>
+      <title>MCMC Methods</title>
+      <link>/projects/mcmc/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/projects/mcmc/</guid>
+      <description>Markov chain Monte Carlo methods are used to estimate the posterior distribution of a parameter of interest. We draw samples from the estimated posterior distribution in order to compute statistics from that distribution. The two main methods I have been looking at are the Metropolis-Hastings algorithm and the other is using Hamiltonian Dynamics.
+The interactive web app&amp;rsquo;s purpose is to help understand the difference between the two methods. There is an introduction to Bayesian statistics, each method, and then four examples.</description>
+    </item>
+    
+    <item>
       <title>Ethics and Data Science in Society</title>
       <link>/blog/ethics/</link>
-      <pubDate>Wed, 14 Feb 2018 16:59:13 -0400</pubDate>
+      <pubDate>Thu, 14 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/blog/ethics/</guid>
       <description>Cathy O’Neil discusses the problems and ethics with using data science in her book Weapons of Math Destruction. In one chapter she discusses the U.S. News college ranking, it’s development, and it’s consequences. It was the choice of what was deemed important for a college to have in order for the student to succeed that I see as the problem. A problem with this is that people were trying to cheat the system and raise their score without really deserving it.</description>
@@ -32,7 +51,7 @@
     <item>
       <title>Critique of an /r/dataisbeautiful Post</title>
       <link>/blog/critique/</link>
-      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/blog/critique/</guid>
       <description>I was looking through the /r/dataisbeautiful thread and the one that stood out the most was one where they posted a link to their website, Flickmatrix where combine Rotten Tomato, IDMb, Letterboxd, and Metacritic scores with what’s available on Netflix and Amazon Video.

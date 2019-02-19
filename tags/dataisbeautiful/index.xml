@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dataisbeautiful on Eduardo Gomez</title>
+    <title>Dataisbeautiful on data science</title>
     <link>/tags/dataisbeautiful/</link>
-    <description>Recent content in Dataisbeautiful on Eduardo Gomez</description>
+    <description>Recent content in Dataisbeautiful on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 31 Jan 2018 15:59:13 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 15:59:13 -0400</lastBuildDate>
     
 	<atom:link href="/tags/dataisbeautiful/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Critique of an /r/dataisbeautiful Post</title>
       <link>/blog/critique/</link>
-      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/blog/critique/</guid>
       <description>I was looking through the /r/dataisbeautiful thread and the one that stood out the most was one where they posted a link to their website, Flickmatrix where combine Rotten Tomato, IDMb, Letterboxd, and Metacritic scores with what’s available on Netflix and Amazon Video.

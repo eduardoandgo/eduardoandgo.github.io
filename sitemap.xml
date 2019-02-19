@@ -4,32 +4,37 @@
   
   <url>
     <loc>/blog/data-analytics-lifecyle/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/crime/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/mcmc/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/ethics/</loc>
-    <lastmod>2018-02-14T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/critique/</loc>
-    <lastmod>2018-01-31T15:59:13-04:00</lastmod>
+    <lastmod>2019-01-31T15:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-01-20T21:48:51-07:00</lastmod>
   </url>
   
   <url>
     <loc>/about/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/coderag/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url>
   
   <url>
@@ -45,32 +50,8 @@
   </url>
   
   <url>
-    <loc>/categories/articles/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/aviato/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/bachman/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/belson/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/blog/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,74 +62,104 @@
   </url>
   
   <url>
+    <loc>/tags/crime/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/crime/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/data-analytics/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2018-02-14T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/data-science/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/dataisbeautiful/</loc>
-    <lastmod>2018-01-31T15:59:13-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-01-31T15:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ethics/</loc>
-    <lastmod>2018-02-14T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/hardware/</loc>
-    <lastmod>2018-01-31T15:59:13-04:00</lastmod>
+    <lastmod>2019-01-31T15:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/hooli/</loc>
-    <lastmod>2018-10-03T16:59:13-04:00</lastmod>
+    <lastmod>2019-01-31T15:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/pied-piper/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <loc>/tags/mcmc/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/reddit/</loc>
-    <lastmod>2018-01-31T15:59:13-04:00</lastmod>
+    <lastmod>2019-01-31T15:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny-app/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/society/</loc>
-    <lastmod>2018-02-14T16:59:13-04:00</lastmod>
+    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/united-states/</loc>
+    <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Eduardo Gomez</title>
+    <title>Tags on data science</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Eduardo Gomez</description>
+    <description>Recent content in Tags on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
@@ -21,36 +21,18 @@
     </item>
     
     <item>
-      <title>Aviato</title>
-      <link>/tags/aviato/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      <title>Crime</title>
+      <link>/tags/crime/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
       
-      <guid>/tags/aviato/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bachman</title>
-      <link>/tags/bachman/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
-      
-      <guid>/tags/bachman/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Belson</title>
-      <link>/tags/belson/</link>
-      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
-      
-      <guid>/tags/belson/</guid>
+      <guid>/tags/crime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Analytics</title>
       <link>/tags/data-analytics/</link>
-      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
+      <pubDate>Wed, 20 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/data-analytics/</guid>
       <description></description>
@@ -59,7 +41,7 @@
     <item>
       <title>Data Science</title>
       <link>/tags/data-science/</link>
-      <pubDate>Wed, 14 Feb 2018 16:59:13 -0400</pubDate>
+      <pubDate>Thu, 14 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/data-science/</guid>
       <description></description>
@@ -68,7 +50,7 @@
     <item>
       <title>Dataisbeautiful</title>
       <link>/tags/dataisbeautiful/</link>
-      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/tags/dataisbeautiful/</guid>
       <description></description>
@@ -77,7 +59,7 @@
     <item>
       <title>Ethics</title>
       <link>/tags/ethics/</link>
-      <pubDate>Wed, 14 Feb 2018 16:59:13 -0400</pubDate>
+      <pubDate>Thu, 14 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/ethics/</guid>
       <description></description>
@@ -86,7 +68,7 @@
     <item>
       <title>Hardware</title>
       <link>/tags/hardware/</link>
-      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/tags/hardware/</guid>
       <description></description>
@@ -95,36 +77,54 @@
     <item>
       <title>Hooli</title>
       <link>/tags/hooli/</link>
-      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/tags/hooli/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pied Piper</title>
-      <link>/tags/pied-piper/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      <title>Mcmc</title>
+      <link>/tags/mcmc/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
       
-      <guid>/tags/pied-piper/</guid>
+      <guid>/tags/mcmc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reddit</title>
       <link>/tags/reddit/</link>
-      <pubDate>Wed, 31 Jan 2018 15:59:13 -0400</pubDate>
+      <pubDate>Thu, 31 Jan 2019 15:59:13 -0400</pubDate>
       
       <guid>/tags/reddit/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Shiny App</title>
+      <link>/tags/shiny-app/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/tags/shiny-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Society</title>
       <link>/tags/society/</link>
-      <pubDate>Wed, 14 Feb 2018 16:59:13 -0400</pubDate>
+      <pubDate>Thu, 14 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/society/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>United States</title>
+      <link>/tags/united-states/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/tags/united-states/</guid>
       <description></description>
     </item>
     

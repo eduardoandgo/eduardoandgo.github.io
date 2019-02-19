@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Eduardo Gomez</title>
+    <title>Categories on data science</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Eduardo Gomez</description>
+    <description>Recent content in Categories on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
@@ -21,18 +21,18 @@
     </item>
     
     <item>
-      <title>Articles</title>
-      <link>/categories/articles/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      <title>Crime</title>
+      <link>/categories/crime/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
       
-      <guid>/categories/articles/</guid>
+      <guid>/categories/crime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Science</title>
       <link>/categories/data-science/</link>
-      <pubDate>Wed, 03 Oct 2018 16:59:13 -0400</pubDate>
+      <pubDate>Wed, 20 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/categories/data-science/</guid>
       <description></description>

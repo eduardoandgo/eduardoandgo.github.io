@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mcmc on data science</title>
+    <link>/tags/mcmc/</link>
+    <description>Recent content in Mcmc on data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 18 Feb 2019 16:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/mcmc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCMC Methods</title>
+      <link>/projects/mcmc/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/projects/mcmc/</guid>
+      <description>Markov chain Monte Carlo methods are used to estimate the posterior distribution of a parameter of interest. We draw samples from the estimated posterior distribution in order to compute statistics from that distribution. The two main methods I have been looking at are the Metropolis-Hastings algorithm and the other is using Hamiltonian Dynamics.
+The interactive web app&amp;rsquo;s purpose is to help understand the difference between the two methods. There is an introduction to Bayesian statistics, each method, and then four examples.</description>
+    </item>
+    
+  </channel>
+</rss>
