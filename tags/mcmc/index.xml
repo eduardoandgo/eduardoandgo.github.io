@@ -18,7 +18,7 @@
       
       <guid>/projects/mcmc/</guid>
       <description>Markov chain Monte Carlo methods are used to estimate the posterior distribution of a parameter of interest. We draw samples from the estimated posterior distribution in order to compute statistics from that distribution. The two main methods I have been looking at are the Metropolis-Hastings algorithm and the other is using Hamiltonian Dynamics.
-The interactive web app&amp;rsquo;s purpose is to help understand the difference between the two methods. There is an introduction to Bayesian statistics, each method, and then four examples.</description>
+The interactive web app&amp;rsquo;s purpose is to help understand the difference between the two methods. There is an introduction to Bayesian statistics, each method, and then three examples.</description>
     </item>
     
   </channel>
