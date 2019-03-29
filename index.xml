@@ -6,10 +6,19 @@
     <description>Recent content on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 20 Feb 2019 16:59:13 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regression Models and Classification</title>
+      <link>/post/regression-models-and-classification/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/regression-models-and-classification/</guid>
+      <description>[data]</description>
+    </item>
     
     <item>
       <title>Data Analytics Lifecycle</title>
