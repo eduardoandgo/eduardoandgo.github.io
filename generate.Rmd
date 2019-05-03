@@ -1,0 +1,80 @@
+---
+title: "Crime"
+author: "Eduardo Gomez"
+date: "5/3/2019"
+output: html_document
+---
+
+```{r}
+library(ggplot2); library(dplyr); library(leaflet)
+library(geojsonio); library(purrr)
+#data2018 <- read.csv("/Users/eddiegomez/Desktop/chicago2018.csv")
+```
+
+Let's take a look at the variables that are provided to us in this data set. 
+
+```{r}
+colnames(data2018)
+```
+
+Some variables that I think are important are:
+
+- Primary.Type which refers to the type of crime that was commited in that case. 
+
+- Location.Description tells us exactly what it sounds like, what the location of the crime was (street, motel, apartment, newstand, house, lagoon, etc.)
+
+- Arrest tells us whether or not the crime had people get arrested. This is one of the main focuses of this project seeing as we want a model that will have this binary variable as the response variable.
+
+- Zip.Codes gives us a general location of where the crime happened.
+
+```{r}
+ggplot(data2018, aes(x = Primary.Type)) + 
+  geom_bar(fill = "darkgreen") + 
+  coord_flip() + 
+  labs(x = "Crime Type", title = "Distribution of Crime Type") +
+  theme(text = element_text(size=8),
+        axis.text.x = element_text(size = 8)) 
+```
+
+By Arrested or Not 
+
+```{r}
+ggplot(data2018, aes(x = Primary.Type)) + 
+  geom_bar(fill = "darkgreen") + 
+  coord_flip() + 
+  labs(x = "Crime Type", title = "Distribution of Crime Type") +
+  theme(text = element_text(size=8),
+        axis.text.x = element_text(size = 8)) +
+  facet_wrap(~factor(Arrest, labels = c("Not Arrested", "Arrested")))
+```
+
+Simple Logistic Model
+
+```{r}
+model <- glm(data = data2018, Arrest ~ factor(Primary.Type), family = binomial)
+summary(model)
+exp(coef(model))
+```
+
+Next Logistic Model
+
+```{r}
+data2018$Police.Districts <- factor(data2018$Police.Districts)
+model2 <- glm(data = data2018, Arrest ~ Primary.Type + Police.Districts, family = binomial)
+summary(model2)
+
+dage <- data.frame(Primary.Type = rep(c("CRIMINAL TRESPASS", "HOMICIDE", "PUBLIC PEACE VIOLATION", "SEX OFFENSE"), each = 24),
+                   Police.Districts = rep(c(1:7,9:25), 4))
+dage$Police.Districts <- factor(dage$Police.Districts)
+pp.age <- cbind(dage, predict(model2, newdata = dage, type = "response"))
+
+lpp <- reshape2::melt(pp.age, id.vars = c("Primary.Type", "Police.Districts"), value.name = "probability")
+
+ggplot(lpp, aes(x = Police.Districts, y = probability, colour = Primary.Type)) + 
+  geom_point() + labs(title = "Probability of Arrest Based on Type of Crime", 
+                             x = "Police District", y = "Probability") +
+  theme_bw()#+
+  theme(text = element_text(size=22),
+        axis.text.x = element_text(size = 22)) 
+```
+
