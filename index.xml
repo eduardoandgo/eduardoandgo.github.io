@@ -6,10 +6,37 @@
     <description>Recent content on data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 16:59:13 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Information Visualization</title>
+      <link>/blog/viz/</link>
+      <pubDate>Fri, 26 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/viz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resampling and Tree Based Methods</title>
+      <link>/blog/tree/</link>
+      <pubDate>Fri, 05 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression Models and Classification</title>
+      <link>/blog/models/</link>
+      <pubDate>Fri, 29 Mar 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/models/</guid>
+      <description>There are two uses for models, inference and prediction. The former focuses on the information gained from the model in the sense of a variable being a significant influence on the response variable in question and by how much. The latter&amp;rsquo;s focus is on predicting the value of the response variable given one/some explanatory variables. This one doesn&amp;rsquo;t care much about ease of interpretation but more on accuracy (the opposite for inference).</description>
+    </item>
     
     <item>
       <title>Regression Models and Classification</title>

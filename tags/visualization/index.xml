@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on data science</title>
+    <link>/tags/visualization/</link>
+    <description>Recent content in Visualization on data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 26 Apr 2019 16:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Information Visualization</title>
+      <link>/blog/viz/</link>
+      <pubDate>Fri, 26 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/blog/viz/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

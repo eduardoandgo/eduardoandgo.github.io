@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/viz/</loc>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/tree/</loc>
+    <lastmod>2019-04-05T16:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/models/</loc>
+    <lastmod>2019-03-29T16:59:13-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/regression-models-and-classification/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url>
@@ -38,20 +53,20 @@
   </url>
   
   <url>
-    <loc>/categories/about/</loc>
-    <lastmod>2019-01-20T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/about/</loc>
     <lastmod>2019-01-20T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/categories/about/</loc>
+    <lastmod>2019-01-20T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
-    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -68,13 +83,13 @@
   </url>
   
   <url>
-    <loc>/categories/crime/</loc>
+    <loc>/tags/crime/</loc>
     <lastmod>2019-02-18T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/crime/</loc>
+    <loc>/categories/crime/</loc>
     <lastmod>2019-02-18T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -86,14 +101,14 @@
   </url>
   
   <url>
-    <loc>/categories/data-science/</loc>
-    <lastmod>2019-02-20T16:59:13-04:00</lastmod>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
-    <lastmod>2019-02-14T16:59:13-04:00</lastmod>
+    <loc>/categories/data-science/</loc>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -122,8 +137,20 @@
   </url>
   
   <url>
+    <loc>/tags/information/</loc>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/mcmc/</loc>
     <lastmod>2019-02-18T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/models/</loc>
+    <lastmod>2019-04-05T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -164,8 +191,14 @@
   </url>
   
   <url>
+    <loc>/tags/visualization/</loc>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-26T16:59:13-04:00</lastmod>
     <priority>0</priority>
   </url>
   

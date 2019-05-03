@@ -41,13 +41,13 @@
 
 
 <header class="row text-left title">
-  <h1 class="title">Regression Models and Classification</h1>
+  <h1 class="title">Information Visualization</h1>
 </header>
 <section id="category-pane" class="row meta">
   
   <div class="col-md-12">
     <h6 class="text-left meta">
-        PUBLISHED ON MAR 29, 2019 
+        PUBLISHED ON APR 26, 2019 
       
       
       
@@ -64,33 +64,7 @@
 </section>
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
-    <p>There are two uses for models, inference and prediction. The former focuses on the information gained from the model in the sense of a variable being a significant influence on the response variable in question and by how much. The latter&rsquo;s focus is on predicting the value of the response variable given one/some explanatory variables. This one doesn&rsquo;t care much about ease of interpretation but more on accuracy (the opposite for inference). It really depends on which of these two you are interested in when deciding on the make of your model.</p>
-
-<p>Since I am wanting to predict whether or not one is going to get arrested after committing a crime and getting caught, I am going to use logistic regression. This type of model allows me to use a binary variable as a response variable. I am particularly interested in the the relationship between the the crime and whether or not they get arrested.</p>
-
-<p>The logistic regression equation that I am going to look at is</p>
-
-<p><img src="../formulas/logistic.png" alt="" /></p>
-
-<p>where y is arrested, the x&rsquo;s are the types of crimes (not including arson, as that gets included in the intercept), and the betas that are not beta-sub-zero are the slopes for the types of crimes.</p>
-
-<p>Because this is a logistic model, you can&rsquo;t directly interpret the coeffients provided by the model and instead we are going to be looking at odds ratios.</p>
-
-<p>The odds of someone getting arrested for assault are 1.73 times greater than someone getting arrested for arson.</p>
-
-<p>The odds of someone getting arrested for narcotics is 11528 times greater than someone getting arrest for arson.</p>
-
-<p>Something that I personally don&rsquo;t like about interpretting odds ratios is the fact that you are comparing it to some reference group and if you don&rsquo;t set what the reference group is then R&rsquo;s predetermined reference group might not be one you are interested in. So instead, let&rsquo;s look at a model that has crime type and police districts.</p>
-
-<p><img src="../formulas/logistic2-1.png" alt="" />
-    <img src="../formulas/logistic2-2.png" alt="" /></p>
-
-<p>Instead of looking at odds ratios, this time we are going to look at the probability of the person getting arrested based on the crime and the police district that it&rsquo;s in. For the plot of the probabilities, the crime types we are going to look at: criminal trespass, homicide, public peace violation, and sex offense.</p>
-
-<p><img src="../plots/logisticprob.png" alt="" /></p>
-
-<p>My focus for this project is predicting the whether or not someone will get arrested after getting caught for committing a crime. This simple model is</p>
-
+    
   </div>
 </section>
 <section id="tag-pane" class="row meta">
@@ -103,7 +77,9 @@
       TAGS:
       
       
-      <a class="meta" href="/tags/models">MODELS</a>
+      <a class="meta" href="/tags/information">INFORMATION</a>, 
+      
+      <a class="meta" href="/tags/visualization">VISUALIZATION</a>
       
       
       
@@ -118,13 +94,11 @@
 <section id="menu-pane" class="row menu text-center">
   
   
-  <span><a class="menu-item" href="/blog/data-analytics-lifecyle/">&lt; prev | </a></span>
+  <span><a class="menu-item" href="/blog/tree/">&lt; prev | </a></span>
   
   
   <span><a class="menu-item" href="/blog">blog</a></span>
   
-  
-  <span><a class="menu-item" href="/blog/tree/"> | next &gt;</a></span>
   
   
   <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>

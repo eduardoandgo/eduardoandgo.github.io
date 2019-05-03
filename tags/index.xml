@@ -93,11 +93,29 @@
     </item>
     
     <item>
+      <title>Information</title>
+      <link>/tags/information/</link>
+      <pubDate>Fri, 26 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/tags/information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mcmc</title>
       <link>/tags/mcmc/</link>
       <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Models</title>
+      <link>/tags/models/</link>
+      <pubDate>Fri, 05 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/tags/models/</guid>
       <description></description>
     </item>
     
@@ -125,6 +143,15 @@
       <pubDate>Thu, 14 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/tags/society/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>/tags/visualization/</link>
+      <pubDate>Fri, 26 Apr 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     
