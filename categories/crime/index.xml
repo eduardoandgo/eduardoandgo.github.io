@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Crime in the United States</title>
+      <title>Crime in Chicago</title>
       <link>/projects/crime/</link>
       <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
       
       <guid>/projects/crime/</guid>
-      <description>For my project, I will be looking at the police data from each state in order to create an interactive web app. I have checked a couple of state websites and I have checked that I can get information from them by webscraping. As for the interface, I plan on having a a section where the user can choose which crimes care about less when looking for new places to live and the map will brighten up or change the shade of the color to show them which states would be the best fit.</description>
+      <description>For my project, I will be looking at crime in Chicago, Illinois in 2018. The primary focus of this project is to try to predict if an arrest will happen as a result of the crime. The data is coming from the Chicago police department and was downloaded from this website. Originally the data set has crime information from 2001 to 2019, but I want to focus on the most recent full year, 2018.</description>
     </item>
     
   </channel>

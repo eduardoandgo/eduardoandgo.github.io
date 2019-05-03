@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chicago on data science</title>
+    <link>/tags/chicago/</link>
+    <description>Recent content in Chicago on data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 18 Feb 2019 16:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/chicago/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crime in Chicago</title>
+      <link>/projects/crime/</link>
+      <pubDate>Mon, 18 Feb 2019 16:59:13 -0400</pubDate>
+      
+      <guid>/projects/crime/</guid>
+      <description>For my project, I will be looking at crime in Chicago, Illinois in 2018. The primary focus of this project is to try to predict if an arrest will happen as a result of the crime. The data is coming from the Chicago police department and was downloaded from this website. Originally the data set has crime information from 2001 to 2019, but I want to focus on the most recent full year, 2018.</description>
+    </item>
+    
+  </channel>
+</rss>
