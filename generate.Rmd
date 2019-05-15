@@ -6,7 +6,8 @@ output: html_document
 ---
 
 ```{r}
-library(ggplot2); library(dplyr)
+library(ggplot2); library(dplyr); library(caret)
+library(tree)
 data2018 <- read.csv("./data/chicago2018.csv")
 ```
 
@@ -127,4 +128,90 @@ ggplot(lpp, aes(x = Police.Districts, y = probability, colour = Primary.Type)) +
 ```
 
 #Cross-Validation and Trees
+
+K-fold Cross-Validation
+
+We are going to continue to use the same model as the logistic model with 2 explanatory variables, crime type and police district. Whether or not they were arrested is going to be the response variable. `model2`
+
+```{r}
+data2018$Arrest <- ifelse(data2018$Arrest == "false", 0, 1)
+new <- data2018 %>% select(Arrest, Primary.Type, Police.Districts) %>% na.omit
+new$Arrest <- as.factor(new$Arrest)
+new$Primary.Type <- as.factor(new$Primary.Type)
+new$Police.Districts <- as.factor(new$Police.Districts)
+```
+
+```{r}
+ctrl <- trainControl(method = "cv", number = 10)
+
+mod_fit <- train(Arrest ~ Primary.Type + Police.Districts, data=new, method="glm",
+                 family="binomial", trControl = ctrl)
+
+pred = predict(mod_fit, newdata=new)
+caret::confusionMatrix(pred, new$Arrest)
+```
+
+Classification Tree 
+```{r}
+data2018$Primary.Type <- as.factor(data2018$Primary.Type)
+data2018$crime <- data2018$Primary.Type
+levels(data2018$crime)[levels(data2018$crime)=="ARSON"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="ASSAULT"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="BATTERY"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="CRIM SEXUAL ASSAULT"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="CRIMINAL DAMAGE"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="HOMICIDE"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="STALKING"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="INTIMIDATION"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="OFFENSE INVOLVING CHILDREN"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="SEX OFFENSE"] <- "Violence"
+levels(data2018$crime)[levels(data2018$crime)=="CONCEALED CARRY LICENSE VIOLATION"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="CRIMINAL TRESPASS"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="DECEPTIVE PRACTICE"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="INTERFERENCE WITH PUBLIC OFFICER"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="LIQUOR LAW VIOLATION"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="NON-CRIMINAL"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="OTHER OFFENSE"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="PUBLIC PEACE VIOLATION"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="WEAPONS VIOLATION"] <- "Violation"
+levels(data2018$crime)[levels(data2018$crime)=="HUMAN TRAFFICKING"] <- "Sexual"
+levels(data2018$crime)[levels(data2018$crime)=="OBSCENITY"] <- "Sexual"
+levels(data2018$crime)[levels(data2018$crime)=="PROSTITUTION"] <- "Sexual"
+levels(data2018$crime)[levels(data2018$crime)=="PUBLIC INDECENCY"] <- "Sexual"
+levels(data2018$crime)[levels(data2018$crime)=="BURGLARY"] <- "Theft"
+levels(data2018$crime)[levels(data2018$crime)=="KIDNAPPING"] <- "Theft"
+levels(data2018$crime)[levels(data2018$crime)=="MOTOR VEHICLE THEFT"] <- "Theft"
+levels(data2018$crime)[levels(data2018$crime)=="ROBBERY"] <- "Theft"
+levels(data2018$crime)[levels(data2018$crime)=="THEFT"] <- "Theft"
+levels(data2018$crime)[levels(data2018$crime)=="GAMBLING"] <- "Gambling"
+levels(data2018$crime)[levels(data2018$crime)=="NARCOTICS"] <- "Narcotics"
+levels(data2018$crime)
+```
+
+```{r}
+data2018$Location.Description <- as.factor(data2018$Location.Description)
+data2018$location <- data2018$Location.Description
+levels(data2018$location)[c(2,3,4,5,9,10,11,12,13,15,16,18,19,20,21,24,25,26,27,28,30,32,34,35,39,40,41,43,44,46,47,48,50,53,55,56,57,58,61,62,63,64,65,68,69,70,72,73,74,75,77,78,79,80,81,82,83,84,86,87,88,89,91,92,93,94,95,99,101,103,103,105,107,108,110,111,113,116,117,118,120,121,124,125,126,128,129,130,131,133)] <- "Indoor"
+levels(data2018$location)[c(1,3:45)] <- "Outdoor"
+```
+
+```{r}
+data2018$Arrest <- ifelse(data2018$Arrest == 0, "Not Arrested", "Arrested")
+```
+
+```{r}
+#colnames(data2018) #going to get month
+thing <- data2018 %>% 
+  select(crime, Police.Districts, location, Domestic, Arrest) %>% 
+  na.omit()
+thing$crime <- as.factor(thing$crime)
+thing$Police.Districts <- as.factor(thing$Police.Districts)
+thing$Arrest <- as.factor(thing$Arrest)
+thing$Domestic <- as.factor(thing$Domestic)
+thing$location <- as.factor(thing$location)
+
+tree.arrest <- tree(Arrest ~ location + crime + Domestic, thing)
+summary(tree.arrest)
+plot(tree.arrest); text(tree.arrest, pretty = 0); title(main = "Arrest Classification Tree")
+```
 
