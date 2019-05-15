@@ -74,13 +74,13 @@
 
 <p>where y is arrested, the x&rsquo;s are the types of crimes (not including arson, as that gets included in the intercept), and the betas that are not beta-sub-zero are the slopes for the types of crimes.</p>
 
-<p>Because this is a logistic model, you can&rsquo;t directly interpret the coeffients provided by the model and instead we are going to be looking at odds ratios.</p>
+<p>Because this is a logistic model, you can&rsquo;t directly interpret the coefficients provided by the model and instead we are going to be looking at odds ratios.</p>
 
 <p>The odds of someone getting arrested for assault are 1.73 times greater than someone getting arrested for arson.</p>
 
 <p>The odds of someone getting arrested for narcotics is 11528 times greater than someone getting arrest for arson.</p>
 
-<p>Something that I personally don&rsquo;t like about interpretting odds ratios is the fact that you are comparing it to some reference group and if you don&rsquo;t set what the reference group is then R&rsquo;s predetermined reference group might not be one you are interested in. So instead, let&rsquo;s look at a model that has crime type and police districts.</p>
+<p>Something that I personally don&rsquo;t like about interpreting odds ratios is the fact that you are comparing it to some reference group and if you don&rsquo;t set what the reference group is then R&rsquo;s predetermined reference group might not be one you are interested in. So instead, let&rsquo;s look at a model that has crime type and police districts.</p>
 
 <p><img src="../formulas/logistic2-1.png" alt="" />
     <img src="../formulas/logistic2-2.png" alt="" /></p>
@@ -89,7 +89,7 @@
 
 <p><img src="../plots/logisticprob.png" alt="" /></p>
 
-<p>My focus for this project is predicting the whether or not someone will get arrested after getting caught for committing a crime. This simple model is</p>
+<p>My focus for this project is predicting the whether or not someone will get arrested after getting caught for committing a crime. For this model, we include the police districts to see if certain districts have a higher probability of people getting arrested based on certain crimes. We can see that those committing public peace violation in district 20 have the highest probability of being arrested based on our logistic model. Sex offense in district 3 has the lowest probability of being arrested. Arrest because the person committed a sex offense has the lowest probability across all of the police districts.</p>
 
   </div>
 </section>

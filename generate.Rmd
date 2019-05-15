@@ -6,9 +6,8 @@ output: html_document
 ---
 
 ```{r}
-library(ggplot2); library(dplyr); library(leaflet)
-library(geojsonio); library(purrr)
-#data2018 <- read.csv("/Users/eddiegomez/Desktop/chicago2018.csv")
+library(ggplot2); library(dplyr)
+data2018 <- read.csv("./data/chicago2018.csv")
 ```
 
 Let's take a look at the variables that are provided to us in this data set. 
@@ -27,6 +26,32 @@ Some variables that I think are important are:
 
 - Zip.Codes gives us a general location of where the crime happened.
 
+Let's take a look at the type of crime reported
+
+```{r}
+levels(data2018$Primary.Type)
+```
+
+There seems to be two categories for non-criminal, so let's combine those.
+
+```{r}
+levels(data2018$Primary.Type)[levels(data2018$Primary.Type) == "NON-CRIMINAL (SUBJECT SPECIFIED)"] <- "NON-CRIMINAL"
+```
+
+Are there any levels with zero observations?
+
+```{r}
+table(data2018$Primary.Type)
+```
+
+There aren't any levels with low numbers but "Other Narcotic Violation" only has 1 observation so let's go ahead and add that to "Narcotics"
+
+```{r}
+levels(data2018$Primary.Type)[levels(data2018$Primary.Type) == "OTHER NARCOTIC VIOLATION"] <- "NARCOTICS"
+```
+
+Let's look at the distribution of crime type
+
 ```{r}
 ggplot(data2018, aes(x = Primary.Type)) + 
   geom_bar(fill = "darkgreen") + 
@@ -36,7 +61,9 @@ ggplot(data2018, aes(x = Primary.Type)) +
         axis.text.x = element_text(size = 8)) 
 ```
 
-By Arrested or Not 
+While it looks like some of them have no observations from the bar chart, we know that those lower levels have a couple. Theft is the clear front runner with battery following it.
+
+Now let's separate this graph to see the distribution of Crime Type based on whether they got arrested or not.
 
 ```{r}
 ggplot(data2018, aes(x = Primary.Type)) + 
@@ -48,15 +75,35 @@ ggplot(data2018, aes(x = Primary.Type)) +
   facet_wrap(~factor(Arrest, labels = c("Not Arrested", "Arrested")))
 ```
 
-Simple Logistic Model
+Because of the some levels having a lot more observations than the others, it's difficult to see if the observations with seemingly no bars actually have no observations. Instead let's look at tables.
 
 ```{r}
-model <- glm(data = data2018, Arrest ~ factor(Primary.Type), family = binomial)
+data2018 %>% filter(Arrest == "false") %>% select(Primary.Type) %>% table()
+```
+
+```{r}
+data2018 %>% filter(Arrest == "true") %>% select(Primary.Type) %>% table()
+```
+
+For gambling, liquor law violation, prostitution, and public indecency there weren't any observations that didn't not get arrested. There were observations in all levels that ultimately got arrested. 
+
+#Model
+
+Simple Logistic Model - Let's try to create a model where the response variable (the one we are trying to predict) is whether or not they get arrested with the explanatory variable being the type of crime the person commited.
+
+```{r}
+model <- glm(data = data2018, Arrest ~ Primary.Type, family = binomial)
 summary(model)
 exp(coef(model))
 ```
 
-Next Logistic Model
+The odds of someone getting arrested for assault are 1.73 times greater than someone getting arrested for arson.
+
+The odds of someone getting arrested for narcotics is 11528 times greater than someone getting arrest for arson. (The exceptionally large odds ratio could be because there are a lot more observations that got arrested for narcotics than those who did not get arrested.)
+
+Next Logistic Model - For this model, let's include the police districts to see if certain districts have a higher probability of people getting arrested based on certain crimes. Now we are not going to look at odds ratios because I don't like like having to compare one level to another, I would rather just have each level stand alone with probabilities. We are going to do this by creating a synthetic dataset with the different combinations of crime types and districts and predict with the new model the probability of that combination getting arrested. 
+
+We are going to look at the crimes: Criminal Trespass, Homicide, Public Peace Violation, and Sex Offense. We are going to look at all the police districts except for 8 since our dataset doesn't have information for that district.
 
 ```{r}
 data2018$Police.Districts <- factor(data2018$Police.Districts)
@@ -72,9 +119,12 @@ lpp <- reshape2::melt(pp.age, id.vars = c("Primary.Type", "Police.Districts"), v
 
 ggplot(lpp, aes(x = Police.Districts, y = probability, colour = Primary.Type)) + 
   geom_point() + labs(title = "Probability of Arrest Based on Type of Crime", 
-                             x = "Police District", y = "Probability") +
+                      x = "Police District", y = "Probability",
+                      color = "Crime Type") +
   theme_bw()#+
   theme(text = element_text(size=22),
         axis.text.x = element_text(size = 22)) 
 ```
+
+#Cross-Validation and Trees
 
