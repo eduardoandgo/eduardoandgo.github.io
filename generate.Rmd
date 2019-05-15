@@ -7,7 +7,7 @@ output: html_document
 
 ```{r}
 library(ggplot2); library(dplyr); library(caret)
-library(tree)
+library(tree); library(gganimate)
 data2018 <- read.csv("./data/chicago2018.csv")
 ```
 
@@ -213,5 +213,19 @@ thing$location <- as.factor(thing$location)
 tree.arrest <- tree(Arrest ~ location + crime + Domestic, thing)
 summary(tree.arrest)
 plot(tree.arrest); text(tree.arrest, pretty = 0); title(main = "Arrest Classification Tree")
+```
+
+#Data Visualization
+
+```{r}
+data2018$districts <- as.integer(as.character(data2018$Police.Districts))
+
+ggplot(data2018 %>% select(crime, districts, Arrest) %>% na.omit(), aes(x = crime, fill = crime)) +
+  geom_bar() + 
+  transition_time(time = districts) +
+  labs(title = "Police District: {frame_time}", x = "Crime", y = "Count") + 
+  theme(legend.position = "none") +
+  facet_wrap(~Arrest) +
+  coord_flip()
 ```
 
