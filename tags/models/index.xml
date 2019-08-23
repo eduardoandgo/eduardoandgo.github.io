@@ -17,7 +17,7 @@
       <pubDate>Fri, 05 Apr 2019 16:59:13 -0400</pubDate>
       
       <guid>/blog/tree/</guid>
-      <description></description>
+      <description>K-Fold Cross-Validation will randomly divide the observations into k groups/folds of about the same size. This method will rotate through the folds, having one be the validation fold during every iteration. The rest of the folds that are not the validations folds are going to be used to create the model. Then the mean squared error is going to be calculated using the validation fold that was withheld. The main purpose of this is to figure out how good this model is.</description>
     </item>
     
     <item>

@@ -17,7 +17,8 @@
       <pubDate>Fri, 26 Apr 2019 16:59:13 -0400</pubDate>
       
       <guid>/blog/viz/</guid>
-      <description></description>
+      <description>When making data visualization, one has to take into consideration what information you want to get the viewer to come out with. The creater needs to make sure that there is enough information so the viewer can learn something but you can&amp;rsquo;t overload it because it&amp;rsquo;s make the visualization to difficult to understand. There is a balance that must be taken into consideration.
+For this plot, we are looking at how the amount of crime types changes based on which district we are looking at.</description>
     </item>
     
   </channel>
